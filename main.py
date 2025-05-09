@@ -3,14 +3,14 @@ import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 
 from note import Note
-from nearest_neighbor import NearestNeighbor
-from simulated_annealing import SimulatedAnnealing
-from christofides_algorithm import ChristofidesAlgorithm
-from minimax_genetic_algorithm import MinimaxGeneticAlgorithm
-from goverwelle_algorithm import GoverwelleAlgorithm
-from clustered_routing_algorithm import ClusteredRoutingAlgorithm
-from hilbert_curve_ordering import HilbertCurveAlgorithm
-from lin_kernighan_heuristic import LinKernighanHeuristic
+from algorithms.nearest_neighbor import NearestNeighbor
+from algorithms.simulated_annealing import SimulatedAnnealing
+from algorithms.christofides_algorithm import ChristofidesAlgorithm
+from algorithms.minimax_genetic_algorithm import MinimaxGeneticAlgorithm
+from algorithms.goverwelle_algorithm import GoverwelleAlgorithm
+from algorithms.clustered_routing_algorithm import ClusteredRoutingAlgorithm
+from algorithms.hilbert_curve_ordering import HilbertCurveAlgorithm
+from algorithms.lin_kernighan_heuristic import LinKernighanHeuristic
 
 from utils import load_notes
 from graph_plotter import GraphPlotter
