@@ -1,5 +1,5 @@
 # Ark-Explorer-Note-Route  
-Using algorithms to find the best/fastest way to explore all explorer notes  
+Using algorithms to find the best/fastest way to explore all the Ark Survival Evolved explorer notes on The Island.  
 
 # Algorithms  
 >**Christofides Algorithm:** A heuristic for the Traveling Salesman Problem (TSP) that guarantees a solution within 1.5 times the optimal by combining minimum spanning tree, matching, and Eulerian circuits.  
@@ -19,6 +19,8 @@ Using algorithms to find the best/fastest way to explore all explorer notes
 >**Simulated Annealing:** A probabilistic optimization algorithm that explores solutions by accepting worse moves with decreasing probability to avoid local minima.  
 
 # Details
-- The explorer notes in this project `utils.py > load_notes` only contain the island notes, so no cave notes.  
+- The explorer notes in this project `utils.py > load_notes` do not contain cave notes.  
 - The code is not optimized.  
 - The algorithms will show their progress in the output console.  
+- The MatPlotLib interface allows to track your route progress.  
+- If you want to see which explorer notes you have left in your Ark, you will unfortunatly have to edit the `utils.py > load_notes` function by hand.  
