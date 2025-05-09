@@ -3,6 +3,7 @@ Using algorithms to find the best/fastest way to explore all explorer notes
 
 # Algorithms  
 >**Christofides Algorithm:** A heuristic for the Traveling Salesman Problem (TSP) that guarantees a solution within 1.5 times the optimal by combining minimum spanning tree, matching, and Eulerian circuits.  
+
 >**Clustered Routing:** Divides nodes into clusters and solves routing within and between clusters to simplify complex routing problems.  
 
 >**Goverwelle Algortihm:** My own algorithm, similair to nearest neighbor.  
