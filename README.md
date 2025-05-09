@@ -22,7 +22,7 @@ Using algorithms to find the best/fastest way to explore all the Ark Survival Ev
 - The **Minimax Genetic Algorithm** is limited to **500** generations by default. You can change parameter when calling the function.  
 - The **Lin-Kernighan Heuristic Algorithm** is limited to **10** iterations by default. You can change this in `algorithms > lin_kernighan_heuristic.py > line 49`.  
 - The code is not optimized.  
-- The explorer notes in this project `utils.py > load_notes` do not contain cave notes.  
+- The explorer notes in this project `utils.py > load_notes` do not include cave notes.  
 - The algorithms will show their progress in the output console.  
 - The MatPlotLib interface allows to track your route progress.  
 - If you want to see which explorer notes you have left in your Ark, you will unfortunatly have to edit the `utils.py > load_notes` function by hand.  
