@@ -19,8 +19,8 @@ Using algorithms to find the best/fastest way to explore all the Ark Survival Ev
 >**Simulated Annealing:** A probabilistic optimization algorithm that explores solutions by accepting worse moves with decreasing probability to avoid local minima.  
 
 # Details
-- The **Minimax Genetic Algorithm** is limited to 500 generations by default. You can change parameter when calling the function.  
-- The **Lin-Kernighan Heuristic Algorithm** is limited to 20 iterations by default. You can change this in `algorithms > lin_kernighan_heuristic.py > line 49`.  
+- The **Minimax Genetic Algorithm** is limited to **500** generations by default. You can change parameter when calling the function.  
+- The **Lin-Kernighan Heuristic Algorithm** is limited to **10** iterations by default. You can change this in `algorithms > lin_kernighan_heuristic.py > line 49`.  
 - The code is not optimized.  
 - The explorer notes in this project `utils.py > load_notes` do not contain cave notes.  
 - The algorithms will show their progress in the output console.  
