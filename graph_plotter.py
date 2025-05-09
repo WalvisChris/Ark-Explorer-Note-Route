@@ -11,7 +11,11 @@ class GraphPlotter:
     
     def plot_route(self, route, starting_position, title="", showLabels=False, showStart=True, showCurrent=True):
         starting_x, starting_y = starting_position
-
+        
+        # Remove starting pos from route
+        if starting_position in route:
+            route.remove(starting_position)
+        
         # get note names
         notes = load_notes()
         position_to_name = {note.position: note.name for note in notes}
@@ -26,10 +30,6 @@ class GraphPlotter:
         # Add title if provided
         text = f"{title} ({math.floor(get_total_distance(route) * 10 + 0.5) / 10}m)"
         plt.title(text, fontsize=16)
-
-        # Remove starting pos from route
-        if starting_position in route:
-            route.remove(starting_position)
 
         # First line from start to first note
         if showStart:

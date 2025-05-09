@@ -81,8 +81,10 @@ class ClusteredRoutingAlgorithm:
         route = [self.start_position]
         for cluster_idx in range(self.k):
             cluster_route = self.greedy_within_cluster(clusters[cluster_idx], route[-1])
-            route.extend(cluster_route)
-        
+            
+            # Only add the cluster route if it's not the first position (i.e., no duplicate of start position)
+            route.extend(cluster_route[1:])  # Skip the first element which is the start_position
+
         return route
 
     def greedy_within_cluster(self, cluster, start_position):
